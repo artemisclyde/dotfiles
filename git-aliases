@@ -1,7 +1,8 @@
 [alias]
 	cb = branch --show-current
 	fa = fetch --all
-	st = "!f() { git stash -m $1 }; f"
+	cm = "!f() { git commit -m \"$1\"; }; f"
+	st = "!f() { git stash -m \"$1\"; }; f"
 	stl = stash list
 	stp = "!f() { git stash pop stash@{$1}; }; f"
 	std = "!f() { git stash drop stash@{$1}; }; f"
